@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Registration - E-Book Store</title>
+
+<!-- Bootstrap CSS -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+<div class="container">
+
+    <a class="navbar-brand fw-bold"
+       href="index.html">
+
+        📚  BVRITH E-Book Store
+
+    </a>
+
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+
+    <div class="collapse navbar-collapse"
+         id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="catalog.html">
+                    Catalog
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="login.html">
+                    Login
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active"
+                   href="register.html">
+                    Register
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   href="cart.html">
+                    Cart 🛒
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+</nav>
+
+<!-- ================= REGISTRATION ================= -->
+
+<div class="container my-5">
+
+
+<div class="row justify-content-center">
+
+    <div class="col-12 col-md-10 col-lg-8">
+
+        <div class="card shadow">
+
+            <div class="card-body p-4">
+
+                <h2 class="text-center mb-4">
+                    Create Account
+                </h2>
+
+
+                <form>
+
+
+                    <!-- Name -->
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-6 mb-3">
+
+                            <label for="firstName"
+                                   class="form-label">
+
+                                First Name
+
+                            </label>
+
+                            <input type="text"
+                                   id="firstName"
+                                   class="form-control"
+                                   placeholder="Enter first name"
+                                   required>
+
+                        </div>
+
+
+                        <div class="col-12 col-md-6 mb-3">
+
+                            <label for="lastName"
+                                   class="form-label">
+
+                                Last Name
+
+                            </label>
+
+                            <input type="text"
+                                   id="lastName"
+                                   class="form-control"
+                                   placeholder="Enter last name"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="mb-3">
+
+                        <label for="email"
+                               class="form-label">
+
+                            Email Address
+
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               class="form-control"
+                               placeholder="Enter email"
+                               required>
+
+                    </div>
+
+
+                    <!-- Mobile -->
+
+                    <div class="mb-3">
+
+                        <label for="mobile"
+                               class="form-label">
+
+                            Mobile Number
+
+                        </label>
+
+                        <input type="tel"
+                               id="mobile"
+                               class="form-control"
+                               placeholder="Enter mobile number"
+                               required>
+
+                    </div>
+
+
+                    <!-- Gender -->
+
+                    <div class="mb-3">
+
+                        <label class="form-label">
+                            Gender
+                        </label>
+
+                        <div>
+
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="gender"
+                                       id="male"
+                                       value="male">
+
+                                <label class="form-check-label"
+                                       for="male">
+
+                                    Male
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="gender"
+                                       id="female"
+                                       value="female">
+
+                                <label class="form-check-label"
+                                       for="female">
+
+                                    Female
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="form-check form-check-inline">
+
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="gender"
+                                       id="other"
+                                       value="other">
+
+                                <label class="form-check-label"
+                                       for="other">
+
+                                    Other
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Date of Birth -->
+
+                    <div class="mb-3">
+
+                        <label for="dob"
+                               class="form-label">
+
+                            Date of Birth
+
+                        </label>
+
+                        <input type="date"
+                               id="dob"
+                               class="form-control">
+
+                    </div>
+
+
+                    <!-- Course -->
+
+                    <div class="mb-3">
+
+                        <label for="course"
+                               class="form-label">
+
+                            Course
+
+                        </label>
+
+                        <select id="course"
+                                class="form-select">
+
+                            <option selected>
+                                Select Course
+                            </option>
+
+                            <option>
+                                B.Tech
+                            </option>
+
+                            <option>
+                                M.Tech
+                            </option>
+
+                            <option>
+                                MCA
+                            </option>
+
+                            <option>
+                                MBA
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-6 mb-3">
+
+                            <label for="password"
+                                   class="form-label">
+
+                                Password
+
+                            </label>
+
+                            <input type="password"
+                                   id="password"
+                                   class="form-control"
+                                   placeholder="Enter password"
+                                   required>
+
+                        </div>
+
+
+                        <div class="col-12 col-md-6 mb-3">
+
+                            <label for="confirmPassword"
+                                   class="form-label">
+
+                                Confirm Password
+
+                            </label>
+
+                            <input type="password"
+                                   id="confirmPassword"
+                                   class="form-control"
+                                   placeholder="Confirm password"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Terms -->
+
+                    <div class="form-check mb-3">
+
+                        <input class="form-check-input"
+                               type="checkbox"
+                               id="terms"
+                               required>
+
+                        <label class="form-check-label"
+                               for="terms">
+
+                            I agree to the terms and conditions.
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button type="submit"
+                            class="btn btn-success w-100">
+
+                        Register
+
+                    </button>
+
+
+                </form>
+
+
+                <p class="text-center mt-3">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login here
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white text-center p-3">
+
+
+<p class="mb-0">
+    © Sabeeha Tabussum
+    25WH1A05R5
+    CSE-D
+    2026 E-Book Management System
+</p>
+
+
+</footer>
+
+<!-- Bootstrap JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
