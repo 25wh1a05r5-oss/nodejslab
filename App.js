@@ -1,38 +1,79 @@
-import React, { useState } from "react";
+
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
- 
-function App() {
-  const [num1, setNum1] = useState("");
-  const [num2, setNum2] = useState("");
-  const [result, setResult] = useState("");
- 
-  function addNumbers() {
-    setResult(Number(num1) + Number(num2));
-  }
- 
+
+function Home() {
+  return <h2>Welcome to Student Management System</h2>;
+}
+
+function Registration() {
   return (
-    <div className="container">
-      <h1>Addition of Two Numbers</h1>
- 
-      <input
-        type="number"
-        placeholder="Enter first number"
-        value={num1}
-        onChange={(e) => setNum1(e.target.value)}
-      />
- 
-      <input
-        type="number"
-        placeholder="Enter second number"
-        value={num2}
-        onChange={(e) => setNum2(e.target.value)}
-      />
- 
-      <button onClick={addNumbers}>Add Numbers</button>
- 
-      <h2>Result: {result}</h2>
+    <div>
+      <h2>Student Registration</h2>
+      <input type="text" placeholder="Student Name" />
+      <br />
+      <br />
+      <input type="email" placeholder="Email" />
+      <br />
+      <br />
+      <input type="password" placeholder="Password" />
+      <br />
+      <br />
+      <button type="button">Register</button>
     </div>
   );
 }
- 
+
+function Login() {
+  return (
+    <div>
+      <h2>Student Login</h2>
+      <input type="email" placeholder="Email" />
+      <br />
+      <br />
+      <input type="password" placeholder="Password" />
+      <br />
+      <br />
+      <button type="button">Login</button>
+    </div>
+  );
+}
+
+function About() {
+  return <h2>About: This system manages student information.</h2>;
+}
+
+function Contact() {
+  return <h2>Contact: Sabeeha Tabussum-25WH1A05R5</h2>;
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="app">
+        <h1>Student Management System</h1>
+
+        <nav>
+          <Link to="/">Home</Link> {" | "}
+          <Link to="/register">Registration</Link> {" | "}
+          <Link to="/login">Login</Link> {" | "}
+          <Link to="/about">About</Link> {" | "}
+          <Link to="/contact">Contact</Link>
+        </nav>
+
+        <hr />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Registration />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
+}
+
 export default App;
