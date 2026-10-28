@@ -1,50 +1,25 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #eaf2f8;
+font-family: Arial;
+text-align: center;
+background-color: #f2f6fc;
 }
- 
-.container {
-  width: 350px;
-  margin: 100px auto;
-  padding: 25px;
-  text-align: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px gray;
-}
- 
+
 h1 {
-  color: navy;
-  font-size: 24px;
+color: navy;
 }
- 
+nav {
+padding: 15px;
+background-color: lightblue;
+}
+nav a {
+margin: 10px;
+text-decoration: none;
+color: darkblue;
+}
 input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
+padding: 8px;
 }
- 
 button {
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: navy;
-  color: white;
-  border: none;
-  cursor: pointer;
+padding: 8px 20px;
+cursor: pointer;
 }
- 
-button:hover {
-  background-color: royalblue;
-}
- 
-h2 {
-  color: green;
-}
-
-
-
-
-
-
-
-
